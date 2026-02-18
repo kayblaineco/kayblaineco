@@ -1,0 +1,288 @@
+/* ---------- VARIABLES ---------- */
+
+:root {
+  --persimmon: #EC5800;
+  --fig: #503643;
+  --bg: #FFFFFF;
+}
+
+/* ---------- BASE ---------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--persimmon);
+  font-family: "adobe-garamond-pro", serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  flex: 1;
+}
+
+/* ---------- NAV ---------- */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+}
+
+.logo {
+  font-style: italic;
+  font-size: 20px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+    .logo-img {
+    height: 300px;      /* adjust this number */
+    width: auto;       /* keeps proportions */
+    margin-left: 15rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: center;     /* centers vertically */
+  padding: 2rem 0;         /* vertical spacing */
+  position: relative;      /* in case nav links are added later */
+}
+
+/* ---------- MENU BAR ---------- */
+
+nav a {
+  margin-left: 1rem;
+  font-size: 20px;
+  color: var(--persimmon);
+  text-decoration: none;
+}
+
+/* ---------- FULL WIDTH HERO IMAGE ---------- */
+
+.full-width-image {
+  width: 100%;
+}
+
+.full-width-image img {
+  width: 100%;
+  height: auto;
+  display: block; /* removes small white gap under image */
+}
+
+/* ---------- HOME 2x2 GRID ---------- */
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.home-grid {
+  gap: 1.5rem;
+  padding: 3rem 5%;
+}
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.grid-item img {
+  transition: transform 0.6s ease;
+}
+
+.grid-item:hover img {
+  transform: scale(1.05);
+}
+
+.grid-text {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #EC5800;
+  font-family: "adobe-garamond-pro", serif;
+  font-style: italic;
+  font-size: 25pt;
+  font-weight: 700;   /* ← makes text bold */
+}
+
+.grid-text.right {
+  top: 20px;
+  right: 20px;
+  left: auto;        /* cancels the default left positioning */
+  text-align: right; /* aligns text nicely */
+}
+
+.grid-text {
+  top: 35px;
+}
+
+.grid-text.right {
+  top: 15px;
+}
+
+/* ---------- 5:7 IMAGE RATIO ---------- */
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 5 / 7;  /* THIS creates the 5:7 proportion */
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* crops image cleanly to fit ratio */
+  display: block;
+  object-position: center top;
+}
+
+/* ---------- HERO / HOME ---------- */
+
+.hero {
+  min-height: 30vh;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+
+.hero-text {
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 30px;
+  font-style: italic;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 30px;
+  line-height: 1;
+  text-align: center;
+  max-width: 420px;
+}
+
+/* ---------- FEATURED PIECES ---------- */
+
+.section {
+  gap: 1.5rem;
+  padding: 3rem 5%;
+}
+
+.section h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 2rem;
+}
+
+.section img {
+  transition: transform 0.6s ease;
+}
+
+.section:hover img {
+  transform: scale(1.05);
+}
+
+/* ---------- GRID ---------- */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 4rem;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.title {
+  margin-top: 1rem;
+  font-size: 30px;
+}
+
+.price {
+  font-size: 30px;
+  color: var(--persimmon);
+}
+
+/* ---------- ABOUT ---------- */
+
+.muted {
+  background: white;
+}
+
+.about {
+  font-size: 40px;
+  max-width: 500px;
+  line-height: 1.8;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer {
+  padding: 4rem;
+  font-size: 20px;
+  color: var(--persimmon);
+}
+
+.contact-container {
+  display: flex;            /* turns it into a flexbox */
+  justify-content: center;  /* horizontal centering */
+  align-items: center;      /* vertical centering */
+  padding: 2rem 0;          /* optional spacing */
+}
+.contact-container a {
+  margin: 0 0.5rem;  /* optional spacing if more than one link */
+}
+
+/* ---------- THE PROCESS PAGE ---------- */
+
+.process-subtitle {
+  font-family: "adobe-garamond-pro", serif; /* your preferred font */
+  font-style: italic;
+  text-align: margin-left;
+  margin-top: 8rem;        /* reduces space above */
+  margin-bottom: 0rem;       /* reduces space below before video grid */
+  line-height: 0.2;          /* optional: tighter lines if needed */
+}
+
+.process-grid {
+  display: flex;
+  gap: 2rem;           /* space between video and image */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;     /* stacks on mobile */
+  margin-top: 2rem;
+}
+
+.process-video {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.process-image {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 8px;
+}
