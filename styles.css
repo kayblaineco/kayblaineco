@@ -27,6 +27,8 @@ body {
 
 .section {
   flex: 1;
+  gap: 1.5rem;
+  padding: 3rem 5%;
 }
 
 /* ---------- HEADER (NEW STRUCTURE) ---------- */
@@ -134,6 +136,7 @@ body {
   height: 100%;
   object-fit: cover;
   display: block;
+  object-position: center top;
   transition: transform 0.6s ease;
 }
 
@@ -169,14 +172,6 @@ body {
   position: relative;
   overflow: hidden;
   aspect-ratio: 5 / 7;  /* THIS creates the 5:7 proportion */
-}
-
-.grid-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;   /* crops image cleanly to fit ratio */
-  display: block;
-  object-position: center top;
 }
 
 /* ---------- HERO / HOME ---------- */
@@ -219,11 +214,6 @@ body {
 }
 
 /* ---------- FEATURED PIECES ---------- */
-
-.section {
-  gap: 1.5rem;
-  padding: 3rem 5%;
-}
 
 .section h2 {
   font-size: 30px;
