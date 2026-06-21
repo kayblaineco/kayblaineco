@@ -17,9 +17,6 @@ body {
   background: var(--bg);
   color: var(--persimmon);
   font-family: "adobe-garamond-pro", serif;
-}
-
-body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -31,7 +28,7 @@ body {
   padding: 3rem 5%;
 }
 
-/* ---------- HEADER (NEW STRUCTURE) ---------- */
+/* ---------- HEADER ---------- */
 
 .site-header {
   display: flex;
@@ -41,20 +38,16 @@ body {
   padding-bottom: 2rem;
 }
 
-/* Logo */
-
 .logo {
   height: 175px;
   width: auto;
   margin-bottom: 1.5rem;
 }
 
-/* Navigation */
-
 .main-nav {
   display: flex;
   justify-content: center;
-  gap: 3rem;        /* OPTIONAL: wider spacing = more luxury feel */
+  gap: 3rem;
   flex-wrap: wrap;
 }
 
@@ -62,15 +55,15 @@ body {
   color: var(--persimmon);
   text-decoration: none;
   font-family: "adobe-garamond-pro", serif;
-  font-size: 16px;  /* OPTIONAL: slightly smaller, more refined */
-  letter-spacing: 0.08em;  /* OPTIONAL: adds spacing elegance */
+  font-size: 16px;
+  letter-spacing: 0.08em;
 }
 
 .main-nav a:hover {
   opacity: 0.7;
 }
 
-/* ---------- FULL WIDTH HERO IMAGE ---------- */
+/* ---------- FULL WIDTH IMAGE ---------- */
 
 .full-width-image {
   width: 100%;
@@ -79,10 +72,11 @@ body {
 .full-width-image img {
   width: 100%;
   height: auto;
-  display: block; /* removes small white gap under image */
+  display: block;
 }
 
-/* ---------- HOME 2x2 GRID ---------- */
+/* ---------- HOME GRID ---------- */
+
 @keyframes imageFadeIn {
   from {
     opacity: 0;
@@ -94,31 +88,6 @@ body {
   }
 }
 
-.home-grid .grid-item {
-  opacity: 0;
-  animation: imageFadeIn 1.2s ease-out forwards;
-}
-
-.home-grid .grid-item:nth-child(1) {
-  animation-delay: 0.1s;
-}
-
-.home-grid .grid-item:nth-child(2) {
-  animation-delay: 0.3s;
-}
-
-.home-grid .grid-item:nth-child(3) {
-  animation-delay: 0.5s;
-}
-
-.home-grid .grid-item:nth-child(4) {
-  animation-delay: 0.7s;
-}
-
-.home-grid .grid-item {
-  will-change: opacity, transform;
-}
-
 .home-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -126,12 +95,29 @@ body {
   padding: 3rem 5%;
 }
 
-.grid-item img {
+.home-grid .grid-item {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 5 / 7;
+
+  opacity: 0;
+  animation: imageFadeIn 1.2s ease-out forwards;
+  will-change: opacity, transform;
+}
+
+/* stagger animation */
+.home-grid .grid-item:nth-child(1) { animation-delay: 0.1s; }
+.home-grid .grid-item:nth-child(2) { animation-delay: 0.3s; }
+.home-grid .grid-item:nth-child(3) { animation-delay: 0.5s; }
+.home-grid .grid-item:nth-child(4) { animation-delay: 0.7s; }
+
+/* ONLY home hover effect */
+.home-grid .grid-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
   object-position: center top;
+  display: block;
   transition: transform 0.6s ease;
 }
 
@@ -139,6 +125,7 @@ body {
   transform: scale(1.05);
 }
 
+/* grid text overlay */
 .grid-text {
   position: absolute;
   top: 35px;
@@ -149,7 +136,6 @@ body {
   font-weight: 700;
 }
 
-/* Right-aligned variant */
 .grid-text.right {
   top: 15px;
   right: 20px;
@@ -157,19 +143,7 @@ body {
   text-align: right;
 }
 
-.grid-link:hover .grid-text {
-  opacity: 0.85;
-}
-
-/* ---------- 5:7 IMAGE RATIO ---------- */
-
-.grid-item {
-  position: relative;
-  overflow: hidden;
-  aspect-ratio: 5 / 7;  /* THIS creates the 5:7 proportion */
-}
-
-/* ---------- HERO / HOME ---------- */
+/* ---------- HERO ---------- */
 
 .hero {
   min-height: 30vh;
@@ -203,29 +177,11 @@ body {
   font-size: 40px;
   font-weight: 700;
   color: var(--persimmon);
-
   margin-top: 1rem;
   margin-bottom: 3rem;
 }
 
-/* ---------- FEATURED PIECES ---------- */
-
-.section h2 {
-  font-size: 30px;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  margin-bottom: 2rem;
-}
-
-.home-grid .grid-item img {
-  transition: transform 0.6s ease;
-}
-
-.grid-item:hover img {
-  transform: scale(1.05);
-}
-
-/* ---------- GRID ---------- */
+/* ---------- GRID (JEWELRY PAGE) ---------- */
 
 .grid {
   display: grid;
@@ -244,14 +200,18 @@ body {
   text-align: center;
 }
 
+/* IMPORTANT: no hover effects here */
 .card img {
-  transform: none;
+  width: 100%;
+  display: block;
+  transition: none;
 }
 
 .card:hover img {
   transform: none;
 }
 
+/* text styles */
 .title {
   margin-top: 1rem;
   margin-bottom: 0.25rem;
@@ -261,18 +221,6 @@ body {
 .price {
   font-size: 16px;
   opacity: 0.85;
-}
-
-/* ---------- ABOUT ---------- */
-
-.muted {
-  background: white;
-}
-
-.about {
-  font-size: 40px;
-  max-width: 500px;
-  line-height: 1.8;
 }
 
 /* ---------- FOOTER ---------- */
@@ -285,7 +233,6 @@ body {
   border-top: 1px solid rgba(80, 54, 67, 0.2);
 }
 
-/* Footer navigation links */
 .footer-links {
   display: flex;
   justify-content: center;
@@ -303,7 +250,6 @@ body {
   padding: 0 0.75rem;
 }
 
-/* add the divider AFTER each link except the last one */
 .footer-links a:not(:last-child)::after {
   content: "|";
   position: absolute;
@@ -311,7 +257,6 @@ body {
   color: var(--persimmon);
 }
 
-/* Email */
 .footer-email {
   margin-bottom: 1.5rem;
   font-size: 18px;
@@ -320,10 +265,9 @@ body {
 .footer-email a {
   color: var(--persimmon);
   text-decoration: underline;
-  text-underline-offset: 3px; /* optional: makes it look more refined */
+  text-underline-offset: 3px;
 }
 
-/* Copyright */
 .footer-bottom {
   font-size: 14px;
   margin-bottom: 2rem;
@@ -334,7 +278,6 @@ body {
   margin-top: 0.5rem;
 }
 
-/* Instagram icon */
 .footer-icon {
   width: 22px;
   height: 22px;
@@ -345,40 +288,28 @@ body {
   transform: scale(1.1);
 }
 
-/* ---------- THE PROCESS PAGE ---------- */
+/* ---------- PROCESS PAGE ---------- */
 
 .process-subtitle {
-  font-family: "adobe-garamond-pro", serif; /* your preferred font */
+  font-family: "adobe-garamond-pro", serif;
   text-align: left;
-  margin-top: 8rem;        /* reduces space above */
-  margin-bottom: 0rem;       /* reduces space below before video grid */
-  line-height: 0.2;          /* optional: tighter lines if needed */
+  margin-top: 8rem;
+  margin-bottom: 0;
+  line-height: 1;
 }
 
 .process-grid {
   display: flex;
-  gap: 2rem;           /* space between video and image */
+  gap: 2rem;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;     /* stacks on mobile */
+  flex-wrap: wrap;
   margin-top: 2rem;
 }
 
-.process-video {
-  max-width: 500px;
-  width: 100%;
-  border-radius: 8px;
-}
-
+.process-video,
 .process-image {
   max-width: 500px;
   width: 100%;
   border-radius: 8px;
-}
-
-/* ---------- JEWELRY PAGE TEXT UNIFICATION ---------- */
-
-.jewelry-page,
-.jewelry-page * {
-  color: var(--persimmon);
 }
