@@ -284,6 +284,16 @@ body {
   color: var(--persimmon);
   font-size: 16px;
   letter-spacing: 0.05em;
+  position: relative;
+  padding: 0 0.75rem;
+}
+
+/* add the divider AFTER each link except the last one */
+.footer-links a:not(:last-child)::after {
+  content: "|";
+  position: absolute;
+  right: -0.6rem;
+  color: var(--persimmon);
 }
 
 /* Email */
@@ -294,7 +304,8 @@ body {
 
 .footer-email a {
   color: var(--persimmon);
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 3px; /* optional: makes it look more refined */
 }
 
 /* Copyright */
