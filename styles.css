@@ -33,28 +33,27 @@ body {
 
 .nav {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding: 2rem 3rem;
+  padding: 2rem 5%;
 }
 
 .logo {
-  font-style: italic;
-  font-size: 20px;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-}
-    .logo-img {
-    height: 300px;      /* adjust this number */
-    width: auto;       /* keeps proportions */
-    margin-left: 15rem;
+  height: 120px;   /* adjust as needed */
+  width: auto;
 }
 
-.nav {
+.nav nav {
   display: flex;
-  justify-content: center; /* centers horizontally */
-  align-items: center;     /* centers vertically */
-  padding: 2rem 0;         /* vertical spacing */
-  position: relative;      /* in case nav links are added later */
+  gap: 2rem;
+}
+
+.nav nav a {
+  color: var(--persimmon);
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "adobe-garamond-pro", serif;
+  font-style: italic;
 }
 
 /* ---------- MENU BAR ---------- */
