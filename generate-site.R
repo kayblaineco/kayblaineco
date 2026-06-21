@@ -1,7 +1,6 @@
 library(readr)
 library(dplyr)
 library(glue)
-source("generate-site.R")
 
 header <- '
 <header class="site-header">
@@ -94,9 +93,7 @@ jewelry_page <- glue('
 
 <body>
 
-<header class="site-header">
-  <img src="images/logo.jpg" class="logo">
-</header>
+{header}
 
 <section class="section">
   <h1 class="page-title">Jewelry</h1>
@@ -106,6 +103,8 @@ jewelry_page <- glue('
   </div>
 
 </section>
+
+{footer}
 
 </body>
 </html>
