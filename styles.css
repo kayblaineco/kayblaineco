@@ -147,7 +147,6 @@ body {
   left: 20px;
   color: #EC5800;
   font-family: "adobe-garamond-pro", serif;
-  font-style: italic;
   font-size: 25pt;
   font-weight: 700;
 }
@@ -195,7 +194,6 @@ body {
 
 .hero h1 {
   font-size: 30px;
-  font-style: italic;
   line-height: 1.25;
   margin-bottom: 1rem;
 }
@@ -212,7 +210,6 @@ body {
 .page-title {
   text-align: center;
   font-family: "adobe-garamond-pro", serif;
-  font-style: italic;
   font-size: 40px;
   font-weight: 700;
   color: var(--persimmon);
@@ -274,7 +271,6 @@ body {
   margin-top: 1rem;
   margin-bottom: 0.25rem;
   font-size: 28px;
-  font-style: italic;
 }
 
 .price {
@@ -363,7 +359,6 @@ body {
 
 .process-subtitle {
   font-family: "adobe-garamond-pro", serif; /* your preferred font */
-  font-style: italic;
   text-align: left;
   margin-top: 8rem;        /* reduces space above */
   margin-bottom: 0rem;       /* reduces space below before video grid */
