@@ -341,6 +341,11 @@ body {
   margin-bottom: 2rem;
 }
 
+.footer-location {
+  font-size: 12px;
+  margin-top: 0.5rem;
+}
+
 /* Instagram icon */
 .footer-icon {
   width: 22px;
