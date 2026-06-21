@@ -262,20 +262,55 @@ body {
 
 /* ---------- FOOTER ---------- */
 
-footer {
-  padding: 4rem;
-  font-size: 20px;
+.site-footer {
+  text-align: center;
+  padding: 4rem 2rem;
   color: var(--persimmon);
+  font-family: "adobe-garamond-pro", serif;
 }
 
-.contact-container {
-  display: flex;            /* turns it into a flexbox */
-  justify-content: center;  /* horizontal centering */
-  align-items: center;      /* vertical centering */
-  padding: 2rem 0;          /* optional spacing */
+/* Footer navigation links */
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
 }
-.contact-container a {
-  margin: 0 0.5rem;  /* optional spacing if more than one link */
+
+.footer-links a {
+  text-decoration: none;
+  color: var(--persimmon);
+  font-size: 16px;
+  letter-spacing: 0.05em;
+}
+
+/* Email */
+.footer-email {
+  margin-bottom: 1.5rem;
+  font-size: 18px;
+}
+
+.footer-email a {
+  color: var(--persimmon);
+  text-decoration: none;
+}
+
+/* Copyright */
+.footer-bottom {
+  font-size: 14px;
+  margin-bottom: 2rem;
+}
+
+/* Instagram icon */
+.footer-icon {
+  width: 22px;
+  height: 22px;
+  transition: transform 0.3s ease;
+}
+
+.footer-icon:hover {
+  transform: scale(1.1);
 }
 
 /* ---------- THE PROCESS PAGE ---------- */
