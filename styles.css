@@ -29,32 +29,43 @@ body {
   flex: 1;
 }
 
-/* ---------- NAV ---------- */
+/* ---------- HEADER ---------- */
 
-.nav {
+.site-header {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding: 1.5rem 5%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
+
+/* Logo */
 
 .logo {
-  height: 90px;
+  height: 40px;   /* adjust as needed */
   width: auto;
+  margin-bottom: 1.5rem;
 }
 
-.nav nav {
+/* Navigation */
+
+.main-nav {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 2rem;
 }
 
-.nav nav a {
-  margin-left: 1rem;
-  font-size: 18px;
+.main-nav a {
   color: var(--persimmon);
   text-decoration: none;
   font-family: "adobe-garamond-pro", serif;
   font-style: italic;
+  font-size: 18px;
+}
+
+.main-nav a:hover {
+  opacity: 0.7;
 }
 
 /* ---------- FULL WIDTH HERO IMAGE ---------- */
