@@ -2,52 +2,15 @@ library(readr)
 library(dplyr)
 library(glue)
 
-header <- '
-<header class="site-header">
-  <img src="../images/logo.jpg" class="logo">
+header <- paste(
+  readLines("templates/header.html"),
+  collapse = "\n"
+)
 
-  <nav class="main-nav">
-    <a href="../index.html">Home</a>
-    <a href="../jewelry.html">Jewelry</a>
-    <a href="../process.html">The Process</a>
-    <a href="../custom.html">Custom Orders</a>
-    <a href="../about.html">About</a>
-    <a href="../instores.html">In Stores</a>
-  </nav>
-</header>
-'
-
-footer <- '
-<footer class="site-footer">
-
-  <div class="footer-email">
-    <a href="mailto:kayblaineco@gmail.com">
-      kayblaineco@gmail.com
-    </a>
-  </div>
-
-  <div class="footer-links">
-    <a href="../index.html">Home</a>
-    <a href="../jewelry.html">Jewelry</a>
-    <a href="../process.html">The Process</a>
-    <a href="../custom.html">Custom Orders</a>
-    <a href="../about.html">About</a>
-    <a href="../instores.html">In Stores</a>
-  </div>
-
-  <div class="footer-bottom">
-    © 2026, Kay Blaine Co, LLC. All rights reserved.
-  </div>
-
-  <div class="footer-social">
-    <a href="https://www.instagram.com/kayblaineco" target="_blank">
-      <img src="https://cdn.simpleicons.org/instagram/EC5800"
-           class="footer-icon">
-    </a>
-  </div>
-
-</footer>
-'
+footer <- paste(
+  readLines("templates/footer.html"),
+  collapse = "\n"
+)
 
 # ----------------------------
 # LOAD DATA
