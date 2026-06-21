@@ -210,9 +210,10 @@ body {
   font-family: "adobe-garamond-pro", serif;
   font-style: italic;
   font-size: 40px;
-  font-weight: normal;
+  font-weight: 700;
   color: var(--persimmon);
-  margin-top: 2rem;
+
+  margin-top: 1rem;
   margin-bottom: 3rem;
 }
 
