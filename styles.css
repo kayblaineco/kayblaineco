@@ -29,7 +29,7 @@ body {
   flex: 1;
 }
 
-/* ---------- HEADER ---------- */
+/* ---------- HEADER (NEW STRUCTURE) ---------- */
 
 .site-header {
   display: flex;
@@ -42,7 +42,7 @@ body {
 /* Logo */
 
 .logo {
-  height: 40px;   /* adjust as needed */
+  height: 55px;     /* ← recommended “luxury scale” */
   width: auto;
   margin-bottom: 1.5rem;
 }
@@ -52,8 +52,8 @@ body {
 .main-nav {
   display: flex;
   justify-content: center;
+  gap: 3rem;        /* OPTIONAL: wider spacing = more luxury feel */
   flex-wrap: wrap;
-  gap: 2rem;
 }
 
 .main-nav a {
@@ -61,7 +61,8 @@ body {
   text-decoration: none;
   font-family: "adobe-garamond-pro", serif;
   font-style: italic;
-  font-size: 18px;
+  font-size: 16px;  /* OPTIONAL: slightly smaller, more refined */
+  letter-spacing: 0.08em;  /* OPTIONAL: adds spacing elegance */
 }
 
 .main-nav a:hover {
