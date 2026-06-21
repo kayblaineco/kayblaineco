@@ -160,6 +160,10 @@ body {
   text-align: right;
 }
 
+.grid-link:hover .grid-text {
+  opacity: 0.85;
+}
+
 /* ---------- 5:7 IMAGE RATIO ---------- */
 
 .grid-item {
