@@ -203,6 +203,19 @@ body {
   max-width: 420px;
 }
 
+/* ---------- PAGE TITLES ---------- */
+
+.page-title {
+  text-align: center;
+  font-family: "adobe-garamond-pro", serif;
+  font-style: italic;
+  font-size: 30px;
+  font-weight: normal;
+  color: var(--persimmon);
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
 /* ---------- FEATURED PIECES ---------- */
 
 .section {
