@@ -60,7 +60,6 @@ body {
   color: var(--persimmon);
   text-decoration: none;
   font-family: "adobe-garamond-pro", serif;
-  font-style: italic;
   font-size: 16px;  /* OPTIONAL: slightly smaller, more refined */
   letter-spacing: 0.08em;  /* OPTIONAL: adds spacing elegance */
 }
