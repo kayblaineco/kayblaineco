@@ -219,7 +219,14 @@ body {
 }
 
 /* text styles */
-.title,
+.title {
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+  font-size: 34px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
 .price {
   text-decoration: none;
   color: var(--persimmon);
