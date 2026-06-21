@@ -40,24 +40,11 @@ body {
 }
 
 /* Logo */
-@keyframes logoFadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-6px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
 .logo {
   height: 150px;
   width: auto;
   margin-bottom: 1.5rem;
-
-  opacity: 0;
-  animation: logoFadeIn 1.2s ease-out forwards;
 }
 
 /* Navigation */
@@ -94,6 +81,21 @@ body {
 }
 
 /* ---------- HOME 2x2 GRID ---------- */
+@keyframes imageFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.home-grid .grid-item {
+  opacity: 0;
+  animation: imageFadeIn 1.2s ease-out forwards;
+}
 
 .home-grid {
   display: grid;
