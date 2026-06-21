@@ -203,12 +203,18 @@ body {
 /* IMPORTANT: no hover effects here */
 .card img {
   width: 100%;
+  max-height: 420px;
+  object-fit: cover;
   display: block;
-  transition: none;
 }
 
 .card:hover img {
   transform: none;
+}
+
+.card a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* text styles */
