@@ -341,3 +341,7 @@ body {
   text-decoration: none;
   color: inherit;
 }
+
+.card-link .card .title {
+  font-size: 36px !important;
+}
