@@ -35,16 +35,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 5%;
+  padding: 1.5rem 5%;
 }
 
 .logo {
-  height: 30px;   /* adjust as needed */
-  width: auto;
-}
-
-.img {
-  height: 75px;
+  height: 60px;
   width: auto;
 }
 
@@ -54,11 +49,7 @@ body {
 }
 
 .nav nav a {
-  color: var(--persimmon);
-  text-decoration: none;
-  font-size: 20px;
-  font-family: "adobe-garamond-pro", serif;
-  font-style: italic;
+  font-size: 18px;
 }
 
 /* ---------- MENU BAR ---------- */
