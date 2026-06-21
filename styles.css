@@ -343,7 +343,7 @@ body {
 .process-subtitle {
   font-family: "adobe-garamond-pro", serif; /* your preferred font */
   font-style: italic;
-  text-align: margin-left;
+  text-align: left;
   margin-top: 8rem;        /* reduces space above */
   margin-bottom: 0rem;       /* reduces space below before video grid */
   line-height: 0.2;          /* optional: tighter lines if needed */
