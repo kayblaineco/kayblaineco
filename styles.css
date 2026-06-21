@@ -387,3 +387,10 @@ body {
   width: 100%;
   border-radius: 8px;
 }
+
+/* ---------- JEWELRY PAGE TEXT UNIFICATION ---------- */
+
+.jewelry-page,
+.jewelry-page * {
+  color: var(--persimmon);
+}
