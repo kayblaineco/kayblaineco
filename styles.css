@@ -384,8 +384,3 @@ body {
 .jewelry-page * {
   color: var(--persimmon);
 }
-
-.jewelry-page .title,
-.jewelry-page .price {
-  color: var(--persimmon);
-}
