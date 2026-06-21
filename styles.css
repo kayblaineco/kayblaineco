@@ -230,6 +230,8 @@ body {
 .price {
   text-decoration: none;
   color: var(--persimmon);
+  font-size: 16px;
+  opacity: 0.8;
 }
 
 /* ---------- FOOTER ---------- */
