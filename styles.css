@@ -49,16 +49,12 @@ body {
 }
 
 .nav nav a {
-  font-size: 18px;
-}
-
-/* ---------- MENU BAR ---------- */
-
-nav a {
   margin-left: 1rem;
-  font-size: 20px;
+  font-size: 18px;
   color: var(--persimmon);
   text-decoration: none;
+  font-family: "adobe-garamond-pro", serif;
+  font-style: italic;
 }
 
 /* ---------- FULL WIDTH HERO IMAGE ---------- */
