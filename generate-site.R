@@ -37,7 +37,6 @@ footer <- '
 
   <div class="footer-bottom">
     <div><div>© 2026, Kay Blaine Co, LLC. All rights reserved.</div> <div class="footer-location">Boston, Massachusetts</div></div>
-    <div class="footer-location">Boston, Massachusetts</div>
   </div>
 
   <div class="footer-social">
