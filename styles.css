@@ -320,3 +320,22 @@ body {
   width: 100%;
   border-radius: 8px;
 }
+
+/* ---------- FIX: REMOVE LINK STYLING FROM CARDS ---------- */
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* ensures nothing inside inherits underline */
+.card-link * {
+  text-decoration: none;
+}
+
+/* force correct jewelry text color */
+.card-link .title,
+.card-link .price {
+  color: var(--persimmon);
+}
