@@ -43,6 +43,11 @@ body {
   width: auto;
 }
 
+.img {
+  height: 75px;
+  width: auto;
+}
+
 .nav nav {
   display: flex;
   gap: 2rem;
