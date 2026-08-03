@@ -2,6 +2,41 @@ library(readr)
 library(dplyr)
 library(glue)
 
+google_analytics <- '
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NKXSVNYYKG"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag("js", new Date());
+
+gtag("config", "G-NKXSVNYYKG");
+</script>
+'
+
+head_template <- function(title, css_path, favicon_path) {
+  
+  glue('
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>{title}</title>
+
+<link rel="stylesheet" href="https://use.typekit.net/kyg1uun.css">
+
+<link rel="stylesheet" href="{css_path}">
+
+<link rel="icon" type="image/png" href="{favicon_path}">
+
+{google_analytics}
+
+</head>
+')
+  
+}
+
 header <- '
 <header class="site-header">
   <img src="../images/logo.jpg" class="logo">
@@ -85,11 +120,11 @@ cards <- paste0(
 jewelry_page <- glue('
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Jewelry</title>
-<link rel="stylesheet" href="styles.css">
-</head>
+{head_template(
+    title = "Jewelry | Kay Blaine",
+    css_path = "styles.css",
+    favicon_path = "favicon.png"
+)}
 
 <body>
 
@@ -123,11 +158,11 @@ for(i in 1:nrow(data)) {
   page_content <- glue('
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>{data$name[i]}</title>
-<link rel="stylesheet" href="../styles.css">
-</head>
+{head_template(
+    title = paste0(data$name[i], " | Kay Blaine"),
+    css_path = "../styles.css",
+    favicon_path = "../favicon.png"
+)}
 
 <body>
 
