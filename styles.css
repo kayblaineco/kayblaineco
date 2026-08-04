@@ -325,6 +325,26 @@ body {
   border-radius: 8px;
 }
 
+/* ---------- COMING SOON PAGE ---------- */
+
+.coming-soon {
+  text-align: center;
+  margin: 8rem auto;
+  max-width: 700px;
+}
+
+.coming-soon p:first-child {
+  font-size: 32px;
+  color: var(--persimmon);
+  margin-bottom: 1rem;
+}
+
+.coming-soon p:last-child {
+  font-size: 20px;
+  color: var(--fig);
+  font-style: italic;
+}
+
 /* ---------- FIX: REMOVE LINK STYLING FROM CARDS ---------- */
 
 .card-link {
