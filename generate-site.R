@@ -39,10 +39,10 @@ header <- '
 
   <nav class="main-nav">
     <a href="../index.html">Home</a>
-    <a href="../jewelry.html">Jewelry</a>
+    <a href="../gallery.html">Gallery</a>
     <a href="../process.html">The Process</a>
-    <a href="../custom.html">Custom Orders</a>
-    <a href="../about.html">About</a>
+    <a href="../artist.html">The Artist</a>
+    <a href="../about.html">Contact</a>
     <a href="../instores.html">In Stores</a>
   </nav>
 </header>
@@ -59,10 +59,10 @@ footer <- '
 
   <div class="footer-links">
     <a href="../index.html">Home</a>
-    <a href="../jewelry.html">Jewelry</a>
+    <a href="../gallery.html">Gallery</a>
     <a href="../process.html">The Process</a>
-    <a href="../custom.html">Custom Orders</a>
-    <a href="../about.html">About</a>
+    <a href="../artist.html">The Artist</a>
+    <a href="../about.html">Contact</a>
     <a href="../instores.html">In Stores</a>
   </div>
 
@@ -84,7 +84,7 @@ footer <- '
 # LOAD DATA
 # ----------------------------
 
-data <- read_csv("jewelry.csv")
+data <- read_csv("gallery.csv")
 names(data) <- tolower(names(data))
 
 # Convert numeric safely
@@ -98,11 +98,11 @@ data <- data %>%
   )
 
 # ----------------------------
-# BUILD JEWELRY GRID PAGE
+# BUILD GALLERY GRID PAGE
 # ----------------------------
 
 cards <- paste0(
-  '<a class="card-link" href="jewelry/', data$page, '">',
+  '<a class="card-link" href="gallery/', data$page, '">',
   '<div class="card">',
   '<img src="images/', data$image, '">',
   '<p class="card-title">', data$name, '</p>',
@@ -113,11 +113,11 @@ cards <- paste0(
   collapse = "\n"
 )
 
-jewelry_page <- glue('
+gallery_page <- glue('
 <!DOCTYPE html>
 <html lang="en">
 {head_template(
-    title = "Jewelry | Kay Blaine",
+    title = "Gallery | Kay Blaine",
     css_path = "styles.css",
     favicon_path = "favicon.png"
 )}
@@ -127,7 +127,7 @@ jewelry_page <- glue('
 {header}
 
 <section class="section">
-  <h1 class="page-title">Jewelry</h1>
+  <h1 class="page-title">gallery</h1>
 
   <div class="grid">
     {cards}
@@ -141,13 +141,13 @@ jewelry_page <- glue('
 </html>
 ')
 
-writeLines(jewelry_page, "jewelry.html")
+writeLines(gallery_page, "gallery.html")
 
 # ----------------------------
 # BUILD PRODUCT PAGES
 # ----------------------------
 
-dir.create("jewelry", showWarnings = FALSE)
+dir.create("gallery", showWarnings = FALSE)
 
 for(i in 1:nrow(data)) {
   
@@ -188,5 +188,5 @@ for(i in 1:nrow(data)) {
 </html>
 ')
   
-  writeLines(page_content, paste0("jewelry/", data$page[i]))
+  writeLines(page_content, paste0("gallery/", data$page[i]))
 }
