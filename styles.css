@@ -325,6 +325,35 @@ body {
   border-radius: 8px;
 }
 
+/* ---------- ARTIST PAGE ---------- */
+
+.artist-bio {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+  margin: 60px;
+}
+
+.artist-image {
+  flex: 0 0 35%;
+}
+
+.artist-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.artist-text {
+  flex: 1;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.artist-text p {
+  margin-bottom: 25px;
+}
+
 /* ---------- COMING SOON PAGE ---------- */
 
 .coming-soon {
