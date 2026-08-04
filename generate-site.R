@@ -30,7 +30,6 @@ head_template <- function(title, css_path, favicon_path) {
 
 </head>
 ')
-  
 }
 
 header <- '
