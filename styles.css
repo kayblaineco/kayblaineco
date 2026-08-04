@@ -334,11 +334,13 @@ body {
   align-items: center;
   text-align: center;
   min-height: 60vh;
+  gap: 15px;
 }
 
 .coming-soon p {
   font-size: 28px;
   color: var(--persimmon);
+  margin: 0;
 }
 
 /* ---------- FIX: REMOVE LINK STYLING FROM CARDS ---------- */
