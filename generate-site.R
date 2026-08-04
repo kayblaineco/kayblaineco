@@ -25,12 +25,8 @@ head_template <- function(title, css_path, favicon_path) {
 <title>{title}</title>
 
 <link rel="stylesheet" href="https://use.typekit.net/kyg1uun.css">
-
 <link rel="stylesheet" href="{css_path}">
-
 <link rel="icon" type="image/png" href="{favicon_path}">
-
-{google_analytics}
 
 </head>
 ')
