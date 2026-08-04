@@ -42,7 +42,7 @@ header <- '
     <a href="../gallery.html">Gallery</a>
     <a href="../process.html">The Process</a>
     <a href="../artist.html">The Artist</a>
-    <a href="../about.html">Contact</a>
+    <a href="../contact.html">Contact</a>
     <a href="../instores.html">In Stores</a>
   </nav>
 </header>
@@ -62,7 +62,7 @@ footer <- '
     <a href="../gallery.html">Gallery</a>
     <a href="../process.html">The Process</a>
     <a href="../artist.html">The Artist</a>
-    <a href="../about.html">Contact</a>
+    <a href="../contact.html">Contact</a>
     <a href="../instores.html">In Stores</a>
   </div>
 
