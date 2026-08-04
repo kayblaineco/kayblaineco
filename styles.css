@@ -328,21 +328,17 @@ body {
 /* ---------- COMING SOON PAGE ---------- */
 
 .coming-soon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  margin: 8rem auto;
-  max-width: 700px;
+  min-height: 60vh;
 }
 
-.coming-soon p:first-child {
-  font-size: 32px;
+.coming-soon p {
+  font-size: 28px;
   color: var(--persimmon);
-  margin-bottom: 1rem;
-}
-
-.coming-soon p:last-child {
-  font-size: 20px;
-  color: var(--fig);
-  font-style: italic;
 }
 
 /* ---------- FIX: REMOVE LINK STYLING FROM CARDS ---------- */
