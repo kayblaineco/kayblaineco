@@ -384,8 +384,10 @@ body {
 .privacy-text h2 {
     font-size: 24px;
     font-style: italic;
+    font-weight: normal;
+    text-align: center;
     margin-top: 40px;
-    margin-bottom: 12px;
+    margin-bottom: 18px;
 }
 
 .privacy-text p {
