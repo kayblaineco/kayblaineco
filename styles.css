@@ -299,6 +299,17 @@ body {
   transform: scale(1.1);
 }
 
+.footer-policy {
+    margin-left: 12px;
+    color: inherit;          /* Uses the same color as the footer text */
+    text-decoration: none;
+}
+
+.footer-policy:hover {
+    color: var(--persimmon);
+    text-decoration: underline;
+}
+
 /* ---------- PROCESS PAGE ---------- */
 
 .process-subtitle {
