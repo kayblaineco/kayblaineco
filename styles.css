@@ -361,6 +361,40 @@ body {
   margin: 0;
 }
 
+/* ---------- PRIVACY POLICY PAGE ---------- */
+
+.privacy-text {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 0.75in 80px;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.privacy-text h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 12px;
+}
+
+.privacy-text p {
+    margin-bottom: 22px;
+}
+
+.privacy-text em {
+    font-style: italic;
+}
+
+.privacy-text a {
+    color: var(--persimmon);
+    text-decoration: underline;
+}
+
+.privacy-text a:hover {
+    color: var(--fig);
+}
+
 /* ---------- FIX: REMOVE LINK STYLING FROM CARDS ---------- */
 
 .card-link {
