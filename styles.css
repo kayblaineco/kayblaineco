@@ -394,10 +394,6 @@ body {
     margin-bottom: 22px;
 }
 
-.privacy-text em {
-    font-style: italic;
-}
-
 .privacy-text a {
     color: var(--persimmon);
     text-decoration: underline;
