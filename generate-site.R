@@ -90,7 +90,6 @@ names(data) <- tolower(names(data))
 # Convert numeric safely
 data <- data %>%
   mutate(
-    price = as.numeric(price),
     cost = as.numeric(cost),
     
     profit = price - cost,
