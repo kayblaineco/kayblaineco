@@ -1,16 +1,16 @@
-ID,NAME,PRICE,COST,IMAGE,DESCRIPTION,SIZE,PAGE
-shell-ring,Shell Ring,250,29.6,shell-ring-1.png,"Inspired by sea shells found on the north Atlantic coast of the Untied States, the unique geometries of this ring replicate the natural beauty gifted by the ocean. Available in sterling silver and gold. Contact before purchasing.",Size 8,shell-ring.html
-ribbon-ring,Ribbon Ring,175,17.53,ribbon-ring-1.png,"Inspired by ripples of the north Atlantic ocean on the coast of the Untied States, the unique geometries of this ring replicate the natural beauty gifted by the ocean. Available in sterling silver and gold. Contact before purchasing.",Size 7.5,ribbon-ring.html
-turquoise-ring,Turquoise Ring,150,15,turquoise-ring-1.png,"Influenced by the landscape of the Southwestern United States and its beautiful geological formations, this turquoise ring is a symbolic tie to the unique stone formations which are only found when acidic waters make contact with copper metal.",Size 7.5,turquoise-ring.html
-lapis-ring,Lapis Ring,SOLD,,lapis-ring-1.png,,Size 8,lapis-ring.html
-long-island-necklace,Long Island Stone Necklace,225,,long-island-necklace-1.png,,,long-island-necklace.html
-long-island-ring,Long Island Stone Ring,SOLD,,long-island-ring-1.png,,Size 8,long-island-ring.html
-mh-wedding-band,Wedding Band,SOLD,,mh-wedding-band-1.png,,Size 9.5,mh-wedding-band.html
-moss-agate-ring,Moss Agate Stone Ring,SOLD,,moss-agate-ring-1.png,,Size 8.5,moss-agate-ring.html
-multicolored-earrings,Multicolored Stone Earrings,250,,multicolored-earrings-1.png,,,multicolored-earrings.html
-opal-ring,Opal Ring,SOLD,,opal-ring-1.png,,Size 7.5,opal-ring.html
-quahog-necklace,Memory of the Tides Necklace,SOLD,,quahog-necklace-1.png,,,quahog-necklace.html
-red-tahoe-necklace,Red Tahoe Stone Neckalce,225,,red-tahoe-necklace-1.png,,,red-tahoe-necklace.html
-silver-spiral-ring,Silver Spiral Ring,SOLD,,silver-spiral-ring-1.png,,Size 8.5,silver-spiral-ring.html
-tahoe-necklace,Tahoe Stone Necklace,SOLD,,tahoe-necklace-1.png,,,tahoe-necklace.html
-twin-tahoe-necklaces,Twin Tahoe Necklaces,SOLD,,twin-tahoe-necklaces-1.png,,,twin-tahoe-necklaces.html
+ID,NAME,PRICE,COST,IMAGE,DESCRIPTION,MATERIAL,SIZE,PAGE
+shell-ring,Shell Ring,$250.00 ,29.6,shell-ring-1.png,"Inspired by sea shells found on the north Atlantic coast of the Untied States, the unique geometries of this ring replicate the natural beauty from the ocean.",.925 sterling silver,Size 8,shell-ring.html
+ribbon-ring,Ribbon Ring,$175.00 ,17.53,ribbon-ring-1.png,"Inspired by ripples of the north Atlantic ocean on the coast of the Untied States, the unique geometries of this ring replicate the natural beauty of the ocean.",.925 sterling silver,Size 7.5,ribbon-ring.html
+turquoise-ring,Turquoise Ring,$150.00 ,15,turquoise-ring-1.png,"Influenced by the landscape of the Southwestern United States and its beautiful geological formations, this turquoise ring is a symbolic tie to the unique stone formations which are only found when acidic waters make contact with copper metal. Circa 2023.",.925 sterling silver and turquoise,Size 7.5,turquoise-ring.html
+lapis-ring,Lapis Ring,SOLD,,lapis-ring-1.png,"A dazzling lapis lazuli ring made with a hand-cut, deep blue lapis cabochon speckled with gold pyrite flakes. The lapis stone sits within a unique dagger geometry. Circa 2023.",.925 sterling silver and lapis lazuli,Size 8,lapis-ring.html
+long-island-necklace,Long Island Stone Necklace,$225.00 ,,long-island-necklace-1.png,A hand-cut cabochon necklace made from a beachstone found on Long Island Sound in coastal Connecticut. Circa 2023.,.925 sterling silver and long island beach stone,,long-island-necklace.html
+long-island-ring,Long Island Stone Ring,SOLD,,long-island-ring-1.png,A hand-cut cabochon ring made from a beachstone found on Long Island Sound in coastal Connecticut. Circa 2023.,Recycled .925 sterling silver and long island beach stone,Size 8,long-island-ring.html
+mh-wedding-band,Wedding Band,SOLD,,mh-wedding-band-1.png,Customized wedding band completed with unique geometric engravings. Circa 2025.,.925 sterling silver,Size 9.5,mh-wedding-band.html
+moss-agate-ring,Moss Agate Stone Ring,SOLD,,moss-agate-ring-1.png,"Custom, hand-cut cabochon ring repair. Circa 2025.",Moss agate stone,Size 8.5,moss-agate-ring.html
+multicolored-earrings,Multicolored Stone Earrings,$250.00 ,,multicolored-earrings-1.png,"Symmetrical earring pair with stacked, multicolored stones. Circa 2026.",".925 sterling silver and carnelian, malachite, mother of pearl, lavender jade stones",,multicolored-earrings.html
+opal-ring,Opal Ring,SOLD,,opal-ring-1.png,An iridescent stone ring with two opal stones. Circa 2025.,.925 sterling silver and opal stones,Size 7.5,opal-ring.html
+quahog-necklace,Memory of the Tides Necklace,SOLD,,quahog-necklace-1.png,"Custom designed jewelry for the Silent Spring Gala, Memory of the Tides is a one-of-a-kind necklace with crafted sterling silver and quahog clam shells. Circa 2026.",.925 sterling silver and a quahog shell,,quahog-necklace.html
+red-tahoe-necklace,Red Tahoe Stone Neckalce,$225.00 ,,red-tahoe-necklace-1.png,"A hand-cut cabochon necklace made from a California lake stone found on Lake Tahoe, North America's largest alpine lake. Circa 2024.",.925 sterling silver and lake tahoe stone,,red-tahoe-necklace.html
+silver-spiral-ring,Silver Spiral Ring,SOLD,,silver-spiral-ring-1.png,Forged and metalsmithed silver ring. Circa 2023.,Recycled .925 sterling silver,Size 8.5,silver-spiral-ring.html
+tahoe-necklace,Tahoe Stone Necklace,SOLD,,tahoe-necklace-1.png,"Custom hand-cut cabochon necklace made from a California lake stone found on Lake Tahoe, North America's largest alpine lake. Circa 2025.",.925 sterling silver and lake tahoe stone,,tahoe-necklace.html
+twin-tahoe-necklaces,Twin Tahoe Necklaces,SOLD,,twin-tahoe-necklaces-1.png,"Custom hand-cut cabochon necklaces made from California lake stones found on Lake Tahoe, North America's largest alpine lake. Circa 2024.",.925 sterling silver and lake tahoe stone,,twin-tahoe-necklaces.html
