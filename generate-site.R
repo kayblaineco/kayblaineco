@@ -102,23 +102,17 @@ data <- data %>%
 
 cards <- paste0(
   '<div class="gallery-item">',
-  
   '<img src="images/', data$image, '" alt="', data$name, '">',
-  
   '<div class="gallery-hover-card">',
-  
   '<div class="gallery-name">',
   data$name,
   '</div>',
-  
   '<div class="gallery-description">',
   data$description,
   '</div>',
-  
   '<div class="gallery-material">',
   data$material,
   '</div>',
-  
   ifelse(
     is.na(data$size) | data$size == "",
     "",
@@ -128,7 +122,6 @@ cards <- paste0(
       '</div>'
     )
   ),
-  
   '<div class="gallery-price">',
   ifelse(
     is.na(data$price),
@@ -136,9 +129,7 @@ cards <- paste0(
     paste0("$", format(data$price, nsmall = 2))
   ),
   '</div>',
-  
   '</div>',
-  
   '</div>',
   collapse = "\n"
 )
@@ -156,17 +147,12 @@ gallery_page <- glue('
 <body>
 
 {header}
-
 <section class="gallery-page">
-
   <h1 class="page-title">Gallery</h1>
-
   <div class="gallery-grid">
     {cards}
   </div>
-
 </section>
-
 {footer}
 
 </body>
