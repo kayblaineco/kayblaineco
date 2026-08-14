@@ -1,6 +1,7 @@
 library(readr)
 library(dplyr)
 library(glue)
+library(tidyverse)
 
 google_analytics <- '
 <!-- Google tag (gtag.js) -->
