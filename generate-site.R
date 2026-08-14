@@ -101,20 +101,52 @@ data <- data %>%
 # ----------------------------
 
 cards <- paste0(
-  '<a class="card-link" href="gallery/', data$page, '">',
-  '<div class="card">',
-  '<img src="images/', data$image, '">',
-  '<p class="card-title">', data$name, '</p>',
-  '<p class="card-price">$',
-  data$price,
-  '</p>',
-  '</div></a>',
+  '<div class="gallery-item">',
+  
+  '<img src="images/', data$image, '" alt="', data$name, '">',
+  
+  '<div class="gallery-hover-card">',
+  
+  '<div class="gallery-name">',
+  data$name,
+  '</div>',
+  
+  '<div class="gallery-description">',
+  data$description,
+  '</div>',
+  
+  '<div class="gallery-material">',
+  data$material,
+  '</div>',
+  
+  ifelse(
+    is.na(data$size) | data$size == "",
+    "",
+    paste0(
+      '<div class="gallery-size">',
+      data$size,
+      '</div>'
+    )
+  ),
+  
+  '<div class="gallery-price">',
+  ifelse(
+    is.na(data$price),
+    "",
+    paste0("$", format(data$price, nsmall = 2))
+  ),
+  '</div>',
+  
+  '</div>',
+  
+  '</div>',
   collapse = "\n"
 )
 
 gallery_page <- glue('
 <!DOCTYPE html>
 <html lang="en">
+
 {head_template(
     title = "Gallery | Kay Blaine",
     css_path = "styles.css",
@@ -125,10 +157,11 @@ gallery_page <- glue('
 
 {header}
 
-<section class="section">
-  <h1 class="page-title">gallery</h1>
+<section class="gallery-page">
 
-  <div class="grid">
+  <h1 class="page-title">Gallery</h1>
+
+  <div class="gallery-grid">
     {cards}
   </div>
 
@@ -141,51 +174,3 @@ gallery_page <- glue('
 ')
 
 writeLines(gallery_page, "gallery.html")
-
-# ----------------------------
-# BUILD PRODUCT PAGES
-# ----------------------------
-
-dir.create("gallery", showWarnings = FALSE)
-
-for(i in 1:nrow(data)) {
-  
-  page_content <- glue('
-<!DOCTYPE html>
-<html lang="en">
-{head_template(
-    title = paste0(data$name[i], " | Kay Blaine"),
-    css_path = "../styles.css",
-    favicon_path = "../favicon.png"
-)}
-
-<body>
-
-{header}
-
-<section class="section product-page">
-
-  <div class="product-grid">
-
-    <div>
-      <img src="../images/{data$image[i]}" style="width:100%;">
-    </div>
-
-    <div>
-      <h1 class="page-title">{data$name[i]}</h1>
-      <p class="price">${data$price[i]}</p>
-      <p>{data$description[i]}</p>
-    </div>
-
-  </div>
-
-</section>
-
-{footer}
-
-</body>
-</html>
-')
-  
-  writeLines(page_content, paste0("gallery/", data$page[i]))
-}
