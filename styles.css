@@ -196,7 +196,7 @@ body {
   gap: 0.5in;
 }
 
-/* Individual gallery image/card */
+/* Individual gallery item */
 
 .gallery-item {
   position: relative;
@@ -205,7 +205,7 @@ body {
   overflow: hidden;
 }
 
-/* Image */
+/* Gallery image */
 
 .gallery-item img {
   display: block;
@@ -222,16 +222,17 @@ body {
   bottom: 0;
   width: 100%;
   box-sizing: border-box;
+
   padding: 0.25in;
 
   background: rgba(80, 80, 80, 0.88);
-  color: #FFFFFF;
+  color: #ffffff;
 
   transform: translateY(100%);
   transition: transform 0.35s ease;
 }
 
-/* Bring hover card upward */
+/* Raise hover card */
 
 .gallery-item:hover .gallery-hover-card {
   transform: translateY(0);
@@ -239,7 +240,7 @@ body {
 
 /* Name */
 
-.gallery-hover-card .gallery-name {
+.gallery-name {
   margin: 0 0 12px;
   font-size: 28px;
   font-weight: bold;
@@ -249,7 +250,7 @@ body {
 
 /* Description */
 
-.gallery-hover-card .gallery-description {
+.gallery-description {
   margin: 0 0 10px;
   font-size: 18px;
   font-weight: normal;
@@ -257,11 +258,11 @@ body {
   line-height: 1.35;
 }
 
-/* Material, size, and price */
+/* Material, size, price */
 
-.gallery-hover-card .gallery-material,
-.gallery-hover-card .gallery-size,
-.gallery-hover-card .gallery-price {
+.gallery-material,
+.gallery-size,
+.gallery-price {
   margin: 4px 0;
   font-size: 16px;
   font-weight: normal;
@@ -269,9 +270,9 @@ body {
   line-height: 1.25;
 }
 
-/* Size is italicized */
+/* Size */
 
-.gallery-hover-card .gallery-size {
+.gallery-size {
   font-style: italic;
 }
 
