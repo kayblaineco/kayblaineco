@@ -181,57 +181,98 @@ body {
   margin-bottom: 3rem;
 }
 
-/* ---------- GRID (JEWELRY PAGE) ---------- */
+/* ---------- GALLERY PAGE ---------- */
 
-.grid {
+.gallery-page {
+  width: 100%;
+  padding: 0 0.5in 80px;
+  box-sizing: border-box;
+}
+
+.gallery-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 4rem;
-  width: 100%;
+  grid-template-columns: repeat(3, 300px);
+  justify-content: center;
+  gap: 0.5in;
 }
 
-@media (max-width: 768px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
+/* Individual gallery image/card */
+
+.gallery-item {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
 }
 
-.card {
-  text-align: center;
-}
+/* Image */
 
-/* IMPORTANT: no hover effects here */
-.card img {
-  width: 100%;
-  max-height: 420px;
-  object-fit: cover;
+.gallery-item img {
   display: block;
-  transition: transform 0.5s ease;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
 }
 
-.card-link:hover .card img {
-  transform: scale(1.03);
+/* Hover card */
+
+.gallery-hover-card {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.25in;
+
+  background: rgba(80, 80, 80, 0.88);
+  color: #FFFFFF;
+
+  transform: translateY(100%);
+  transition: transform 0.35s ease;
 }
 
-.card a {
-  text-decoration: none;
-  color: inherit;
+/* Bring hover card upward */
+
+.gallery-item:hover .gallery-hover-card {
+  transform: translateY(0);
 }
 
-/* text styles */
-.card-title {
-  margin-top: 1rem;
-  margin-bottom: 0.25rem;
-  font-size: 34px;
-  font-weight: 500;
-  letter-spacing: 0.02em;
+/* Name */
+
+.gallery-hover-card .gallery-name {
+  margin: 0 0 12px;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.1;
 }
 
-.card-price {
-  text-decoration: none;
-  color: var(--persimmon);
+/* Description */
+
+.gallery-hover-card .gallery-description {
+  margin: 0 0 10px;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: left;
+  line-height: 1.35;
+}
+
+/* Material, size, and price */
+
+.gallery-hover-card .gallery-material,
+.gallery-hover-card .gallery-size,
+.gallery-hover-card .gallery-price {
+  margin: 4px 0;
   font-size: 16px;
-  opacity: 0.8;
+  font-weight: normal;
+  text-align: left;
+  line-height: 1.25;
+}
+
+/* Size is italicized */
+
+.gallery-hover-card .gallery-size {
+  font-style: italic;
 }
 
 /* ---------- FOOTER ---------- */
