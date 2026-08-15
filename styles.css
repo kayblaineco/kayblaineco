@@ -511,6 +511,27 @@ body {
   margin: 0;
 }
 
+/* ---------- AUCTION ITEM PAGE ---------- */
+
+.auction-meta {
+  text-align: center;
+}
+
+.auction-meta p {
+  font-family: "adobe-garamond-pro", serif;
+  color: var(--fig);
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  margin: 0.5rem 0 2rem;
+}
+
+.auction-value {
+  font-size: 22px !important;
+  color: var(--persimmon) !important;
+  font-weight: 600;
+  margin-top: 2rem !important;
+}
+
 /* ---------- PRIVACY POLICY PAGE ---------- */
 
 .privacy-text {
