@@ -397,6 +397,12 @@ body {
 
 /* ---------- CONTACT FORM ---------- */
 
+.contact-intro p {
+  font-size: 28px;
+  color: var(--persimmon);
+  margin: 0;
+}
+
 .contact-form {
   width: 100%;
   max-width: 700px;
