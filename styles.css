@@ -380,7 +380,7 @@ body {
 /* ---------- ARTIST PAGE ---------- */
 
 .artist-bio {
-  margin: 0.75in;
+  margin: 10px 20px 20px;
   font-size: 20px;
   line-height: 1.6;
 }
