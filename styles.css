@@ -400,6 +400,8 @@ body {
 .contact-intro p {
   font-size: 28px;
   color: var(--persimmon);
+  text-align: center;
+  min-height: 50vh;
   margin: 0;
 }
 
