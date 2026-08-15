@@ -42,10 +42,70 @@
 
 </header>
 
-<!-- PAGE CONTENT (TEMP PLACEHOLDER) -->
+<!-- PAGE CONTENT -->
 <main class="section">
   <h1 class="page-title">Contact</h1>
+  <form id="contact-form" class="contact-form">
+    <div class="form-field">
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Your Name"
+        required
+      >
+    </div>
+    <div class="form-field">
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Your Email"
+        required
+      >
+    </div>
+    <div class="form-field">
+      <textarea
+        id="message"
+        name="message"
+        placeholder="Your Message"
+        required
+      ></textarea>
+    </div>
+    <div
+      class="form-success"
+      data-fs-success
+    >
+      Thank you for your message!
+    </div>
+    <div data-fs-error></div>
+    <button
+      type="submit"
+      data-fs-submit-btn
+    >
+      Submit
+    </button>
+  </form>
 </main>
+
+<!-- FORMSPREE -->
+<script>
+  window.formspree =
+    window.formspree ||
+    function () {
+      (formspree.q = formspree.q || []).push(arguments);
+    };
+
+  formspree('initForm', {
+    formElement: '#contact-form',
+    formId: 'moeandbo'
+  });
+</script>
+
+<script
+  src="https://unpkg.com/@formspree/ajax@1"
+  defer>
+</script>
 
 <!-- FOOTER -->
 <footer class="site-footer">
