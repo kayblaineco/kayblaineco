@@ -99,6 +99,11 @@ data <- data %>%
 
 cards <- paste0(
   '<div class="gallery-item">',
+  ifelse(
+    !is.na(data$link) & data$link != "" & file.exists(file.path("gallery", data$link)),
+    paste0('<a class="gallery-link" href="gallery/', data$link, '">'),
+    ""
+  ),
   '<img src="images/', data$image, '" alt="', data$name, '">',
   '<div class="gallery-hover-card">',
   '<div class="gallery-name">',
@@ -113,47 +118,17 @@ cards <- paste0(
   ifelse(
     is.na(data$size) | data$size == "",
     "",
-    paste0(
-      '<div class="gallery-size">',
-      data$size,
-      '</div>'
-    )
+    paste0('<div class="gallery-size">', data$size, '</div>')
   ),
   '<div class="gallery-price">',
-  ifelse(
-    is.na(data$price),
-    "",
-    paste0("$", format(data$price, nsmall = 2))
-  ),
+  ifelse(is.na(data$price), "", data$price),
   '</div>',
+  ifelse(
+    !is.na(data$link) & data$link != "" & file.exists(file.path("gallery", data$link)),
+    "</a>",
+    ""
+  ),
   '</div>',
   '</div>',
   collapse = "\n"
 )
-
-gallery_page <- glue('
-<!DOCTYPE html>
-<html lang="en">
-
-{head_template(
-    title = "Gallery | Kay Blaine",
-    css_path = "styles.css",
-    favicon_path = "favicon.png"
-)}
-
-<body>
-
-{header}
-<section class="gallery-page">
-  <h1 class="page-title">Gallery</h1>
-  <div class="gallery-grid">
-    {cards}
-  </div>
-</section>
-{footer}
-
-</body>
-</html>
-')
-
-writeLines(gallery_page, "gallery.html")
