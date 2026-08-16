@@ -351,6 +351,15 @@ body {
     text-decoration: underline;
 }
 
+/* ---------- GALLERY ITEM LINK ---------- */
+
+.gallery-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  cursor: pointer;
+}
+
 /* ---------- PROCESS PAGE ---------- */
 
 .process-subtitle {
