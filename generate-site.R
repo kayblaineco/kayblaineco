@@ -132,3 +132,26 @@ cards <- paste0(
   '</div>',
   collapse = "\n"
 )
+
+gallery_page <- glue('
+<!DOCTYPE html>
+<html lang="en">
+{head_template(
+    title = "Gallery | Kay Blaine",
+    css_path = "styles.css",
+    favicon_path = "favicon.png"
+)}
+<body>
+{header}
+<section class="gallery-page">
+  <h1 class="page-title">Gallery</h1>
+  <div class="gallery-grid">
+    {cards}
+  </div>
+</section>
+{footer}
+</body>
+</html>
+')
+
+writeLines(gallery_page, "gallery.html")
