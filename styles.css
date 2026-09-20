@@ -329,11 +329,11 @@ section > * {
 }
 
 .footer-links {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
   gap: 2rem;
-  margin-bottom: 2rem;
+  width: fit-content;
+  margin: 0 auto 2rem;
 }
 
 .footer-links a {
@@ -348,8 +348,32 @@ section > * {
 .footer-links a:not(:last-child)::after {
   content: "|";
   position: absolute;
-  right: -0.6rem;
+  right: -1.325rem;
   color: var(--persimmon);
+}
+
+@media (max-width: 900px) {
+  .footer-links {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-links a:nth-child(3n)::after {
+    content: "";
+  }
+}
+
+@media (max-width: 520px) {
+  .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-links a:nth-child(2n)::after {
+    content: "";
+  }
+
+  .footer-links a:nth-child(3n)::after {
+    content: "|";
+  }
 }
 
 .footer-email {
