@@ -457,11 +457,15 @@ section > * {
 
 /* ---------- CONTACT FORM ---------- */
 
+.contact-intro {
+  max-width: 700px;
+}
+
 .contact-intro p {
   font-size: 28px;
   color: var(--persimmon);
   text-align: center;
-  margin: 10px 200px 20px;
+  margin: 10px 25px 20px;
 }
 
 .contact-form {
