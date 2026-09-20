@@ -35,7 +35,7 @@ head_template <- function(title, css_path, favicon_path) {
 
 header <- '
 <header class="site-header">
-  <img src="../images/logo.jpg" class="logo">
+  <img src="../images/logo.png" class="logo">
 
   <nav class="main-nav">
     <a href="../index.html">Home</a>
