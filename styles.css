@@ -50,7 +50,7 @@ section > * {
   padding-bottom: 2rem;
 }
 
-@media (max-width: 720px) {
+@media screen and (max-width: 720px) {
   .main-nav {
     max-width: 320px;
   }
@@ -168,7 +168,7 @@ section > * {
   font-weight: 700;
 }
 
-@media (max-width: 640px) {
+@media screen and (max-width: 640px) {
   .grid-text {
     font-size: 16pt;
   }
@@ -352,7 +352,7 @@ section > * {
   color: var(--persimmon);
 }
 
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
   .footer-links {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -362,7 +362,7 @@ section > * {
   }
 }
 
-@media (max-width: 520px) {
+@media screen and (max-width: 520px) {
   .footer-links {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -467,7 +467,7 @@ section > * {
   margin: 0 min(4vw, .75in) min(3vw, .6in) 0;
 }
 
-@media (max-width: 640px) {
+@media screen and (max-width: 640px) {
   .artist-image {
     width: 100%;
     margin-right: 0;
