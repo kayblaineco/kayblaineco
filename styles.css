@@ -3,6 +3,7 @@
 :root {
   --persimmon: #EC5800;
   --fig: #503643;
+  --raisin: #242124;
   --bg: #FFFFFF;
 }
 
@@ -423,11 +424,19 @@ body {
 .artist-image {
   float: left;
   width: 35%;
-  margin: 0 0.75in 0.75in 0;
+  margin: 0 min(4vw, .75in) min(3vw, .6in) 0;
+}
+
+@media (max-width: 640px) {
+  .artist-image {
+    width: 100%;
+    margin-right: 0;
+  }
 }
 
 .artist-text p {
   margin-bottom: 25px;
+  color: var(--raisin);
 }
 
 /* ---------- CONTACT FORM ---------- */
