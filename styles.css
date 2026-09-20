@@ -367,12 +367,12 @@ section > * {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .footer-links a:nth-child(2n)::after {
-    content: "";
-  }
-
   .footer-links a:nth-child(3n)::after {
     content: "|";
+  }
+
+  .footer-links a:nth-child(2n)::after {
+    content: "";
   }
 }
 
