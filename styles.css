@@ -38,6 +38,12 @@ body {
   padding-bottom: 2rem;
 }
 
+@media (max-width: 720px) {
+  .main-nav {
+    max-width: 320px;
+  }
+}
+
 .logo {
   height: 175px;
   width: auto;
