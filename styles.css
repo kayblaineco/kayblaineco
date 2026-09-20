@@ -82,6 +82,7 @@ body {
     opacity: 0;
     transform: translateY(12px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -106,10 +107,21 @@ body {
 }
 
 /* stagger animation */
-.home-grid .grid-item:nth-child(1) { animation-delay: 0.1s; }
-.home-grid .grid-item:nth-child(2) { animation-delay: 0.3s; }
-.home-grid .grid-item:nth-child(3) { animation-delay: 0.5s; }
-.home-grid .grid-item:nth-child(4) { animation-delay: 0.7s; }
+.home-grid .grid-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.home-grid .grid-item:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.home-grid .grid-item:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.home-grid .grid-item:nth-child(4) {
+  animation-delay: 0.7s;
+}
 
 /* ONLY home hover effect */
 .home-grid .grid-item img {
@@ -221,6 +233,7 @@ body {
   left: 0;
   bottom: 0;
   width: 100%;
+  height: 100%;
   box-sizing: border-box;
 
   padding: 0.25in;
@@ -342,13 +355,14 @@ body {
 }
 
 .footer-policy {
-    color: inherit;          /* Uses the same color as the footer text */
-    text-decoration: none;
+  color: inherit;
+  /* Uses the same color as the footer text */
+  text-decoration: none;
 }
 
 .footer-policy:hover {
-    color: var(--persimmon);
-    text-decoration: underline;
+  color: var(--persimmon);
+  text-decoration: underline;
 }
 
 /* ---------- GALLERY ITEM LINK ---------- */
@@ -544,33 +558,33 @@ body {
 /* ---------- PRIVACY POLICY PAGE ---------- */
 
 .privacy-text {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 0.75in 80px;
-    font-size: 20px;
-    line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 0.75in 80px;
+  font-size: 20px;
+  line-height: 1.6;
 }
 
 .privacy-text h2 {
-    font-size: 24px;
-    font-style: italic;
-    font-weight: normal;
-    text-align: center !important;
-    margin-top: 40px;
-    margin-bottom: 18px;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center !important;
+  margin-top: 40px;
+  margin-bottom: 18px;
 }
 
 .privacy-text p {
-    margin-bottom: 22px;
+  margin-bottom: 22px;
 }
 
 .privacy-text a {
-    color: var(--persimmon);
-    text-decoration: underline;
+  color: var(--persimmon);
+  text-decoration: underline;
 }
 
 .privacy-text a:hover {
-    color: var(--fig);
+  color: var(--fig);
 }
 
 /* ---------- FIX: REMOVE LINK STYLING FROM CARDS ---------- */
