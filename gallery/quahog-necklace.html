@@ -12,6 +12,26 @@
   <!-- Site styles -->
   <link rel="stylesheet" href="../styles.css">
   <link rel="icon" type="image/png" href="../favicon.png">
+  
+  <!-- Glide.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.7.1/dist/css/glide.core.min.css">
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      let glide = new Glide('.glide', {
+        type: 'carousel'
+      });
+      glide.mount();
+    });
+  </script>
+  <style>
+    .glide {
+      width: 350px;
+    }
+    .glide img {
+      width: 100%;
+    }
+  </style>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-NKXSVNYYKG"></script>
@@ -51,8 +71,22 @@
   </div>
 
   <div class="artist-bio">
-  <img class="artist-image" src="images/quahog-necklace-1.png" alt="Memory of the Tides Necklace">
-
+  <div class="artist-image glide">
+    <div class="glide__track" data-glide-el="track">
+      <ul class="glide__slides">
+        <li class="glide__slide">
+          <img class="" src="images/quahog-necklace-1.png" alt="Memory of the Tides Necklace">
+        </li>
+        <li class="glide__slide">
+          <img class="" src="images/quahog-necklace-2.png" alt="Memory of the Tides Necklace">
+        </li>
+        <li class="glide__slide">
+          <img class="" src="images/quahog-necklace-3.png" alt="Memory of the Tides Necklace">
+        </li>
+      </ul>
+    </div>
+  </div>
+  
     <div class="artist-text">
       <p>
         Custom designed jewelry for the Silent Spring Gala, Memory of the Tides
